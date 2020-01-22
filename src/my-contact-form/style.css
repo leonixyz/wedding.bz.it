@@ -11,10 +11,11 @@
   padding: 0.5rem;
   margin: 0.5rem;
   background: #000;
+  border: 2px solid white;
   color: #fff;
   border-radius: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 3.3rem;
+  height: 3.3rem;
   overflow: hidden;
   transition: all .6s cubic-bezier(.17,.67,.3,.95);
 }
@@ -26,7 +27,7 @@
 
 :host(:hover) {
   width: 20rem;
-  height: 18rem; 
+  height: 18.3rem;
   overflow: initial;
   border-radius: initial;
 }
@@ -66,4 +67,3 @@ button {
 button:disabled {
   opacity: 0.5;
 }
-
