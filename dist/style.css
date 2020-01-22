@@ -6,6 +6,10 @@
   font-family: Oxygen;
   src: url(fonts/Oxygen-Regular.ttf);
 }
+@font-face {
+  font-family: Libre Caslon Text;
+  src: url(fonts/LibreCaslonText-Italic.ttf);
+}
 
 * {
   box-sizing: border-box;
@@ -21,6 +25,7 @@ html, body {
   font-family: Oxygen, Verdana, sans-serif;
   line-height: 1.4rem;
   letter-spacing: 0.035rem;
+  color: #343434;
 
   -ms-word-break: break-all;
   word-break: break-all;
@@ -32,12 +37,29 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: Libre Caslon Text;
   line-height: 2rem;
+  color: #4b4b4b;
 }
+
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+  background: linear-gradient(to right, #a49241, #fff);
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin-top: 4px;
+  content: ' ';
+}
+
 
 a {
   color: #9b872e;
   text-decoration: none;
+}
+
+p {
+  margin: 2rem 0;
+  line-height: 1.45rem;
 }
 
 .container {
@@ -134,4 +156,29 @@ hr {
 
 .small {
   font-size: 0.8rem;
+}
+
+#my-picture {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  margin: 1rem 0 1rem 1rem;
+  float: right;
+  min-width: 175px;
+  shape-outside: circle();
+}
+
+#top {
+  background-image: url(/img/hero.jpg);
+  background-position: 20% 60%;
+}
+
+#second-hero {
+  background-image: url(/img/signature.jpg);
+  background-position: 30% 60%;
+}
+
+#third-hero {
+  background-image: url(/img/table.jpg);
+  background-position: 30% 100%;
 }
