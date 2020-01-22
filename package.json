@@ -4,8 +4,9 @@
   "description": "Sources for wedding.bz.it",
   "private": "true",
   "scripts": {
-    "serve": "webpack-dev-server",
-    "build": "webpack"
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "deploy": "aws s3 sync dist s3://$(grep AWS_S3_BUCKET_ID .env | cut -d '=' -f2) && aws cloudfront create-invalidation --distribution-id=$(grep AWS_CLOUDFRONT_DISTRIBUTION_ID .env | cut -d '=' -f2) --paths='/*'"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }
