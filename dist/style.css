@@ -169,16 +169,16 @@ hr {
 }
 
 #top {
-  background-image: url(/img/hero.jpg);
+  background-image: url(/img/heroes/placeholders/hero.jpg);
   background-position: 20% 60%;
 }
 
 #second-hero {
-  background-image: url(/img/signature.jpg);
+  background-image: url(/img/heroes/placeholders/signature.jpg);
   background-position: 30% 60%;
 }
 
 #third-hero {
-  background-image: url(/img/table.jpg);
+  background-image: url(/img/heroes/placeholders/table.jpg);
   background-position: 30% 100%;
 }
