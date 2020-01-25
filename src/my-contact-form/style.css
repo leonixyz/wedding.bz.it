@@ -10,8 +10,8 @@
   max-width: 20rem;
   padding: 0.5rem;
   margin: 0.5rem;
-  background: #000;
-  border: 2px solid white;
+  background: #9d8a33;
+  border: 2px solid #9d8a33;
   color: #fff;
   border-radius: 2rem;
   width: 3.3rem;
@@ -59,11 +59,13 @@ textarea {
 }
 
 button {
-  background: #555;
+  background: #70611d;
   color: #fff;
   height: 2.5rem;
 }
 
 button:disabled {
+  background: #000;
   opacity: 0.5;
+  cursor: not-allowed;
 }
