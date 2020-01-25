@@ -97,7 +97,7 @@ nav.main-nav ul li {
   white-space: nowrap;
   display: inline-block;
   margin: 0;
-  padding: 0.6rem;
+  padding: 0.4rem;
   text-align: right;
 }
 
@@ -114,6 +114,10 @@ nav.main-nav ul li a {
 }
 
 @media screen and (min-width: 500px) {
+  nav.main-nav ul li {
+    padding: 0.6rem;
+  }
+
   nav.main-nav ul li a {
     font-size: 1.2rem;
   }
