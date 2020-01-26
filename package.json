@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "deploy": "aws s3 sync dist s3://$(grep AWS_S3_BUCKET_ID .env | cut -d '=' -f2) && aws cloudfront create-invalidation --distribution-id=$(grep AWS_CLOUDFRONT_DISTRIBUTION_ID .env | cut -d '=' -f2) --paths='/*'"
+    "deploy": "aws s3 sync dist s3://$(grep AWS_S3_BUCKET_ID .env | cut -d '=' -f2) --cache-control max-age=31536000 && aws cloudfront create-invalidation --distribution-id=$(grep AWS_CLOUDFRONT_DISTRIBUTION_ID .env | cut -d '=' -f2) --paths='/*'"
   },
   "repository": {
     "type": "git",
