@@ -19,6 +19,7 @@
   },
   "homepage": "",
   "dependencies": {
+    "core-js": "^3.6.4",
     "raw-loader": "^4.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
@@ -27,7 +28,6 @@
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
-    "babel-loader": "^8.0.6",
-    "dotenv": "^8.2.0"
+    "babel-loader": "^8.0.6"
   }
 }
