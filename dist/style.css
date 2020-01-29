@@ -123,6 +123,10 @@ nav.main-nav ul li a {
   }
 }
 
+nav.main-nav .languages a {
+  margin-right: 0.1rem;
+}
+
 nav.main-nav .languages svg {
   width: 1rem;
   height: 0.65rem;
