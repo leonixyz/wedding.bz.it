@@ -1,4 +1,6 @@
 (() => {
+  if (!customElements) return;
+  
   const css = `
       <style>
         /* Custom styles for this element in here. */
@@ -36,7 +38,7 @@
         ];
       }
 
-      
+
       /**
        * Setup custom element
        */
@@ -57,7 +59,7 @@
        * Invoked each time the custom element is appended into
        * a document-connected element. This will happen each time
        * the node is moved, and may happen before the element's
-       * contents have been fully parsed. 
+       * contents have been fully parsed.
        * Any work that involved fetching resources or rendering
        * should be in here.
        */

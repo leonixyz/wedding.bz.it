@@ -1,4 +1,5 @@
 (() => {
+  if (!customElements) return;
   customElements.define('my-image-gallery',
     /**
      * An image gallery
@@ -14,7 +15,7 @@
         ];
       }
 
-      
+
       /**
        * Setup custom element
        */
@@ -45,7 +46,7 @@
           overlay.classList.toggle('hidden');
         });
         const overlayContent = this.shadowRoot.querySelector('#overlay-content');
-        
+
         // Render images
         const masonry = document.createElement('div');
         masonry.classList.add('masonry');
@@ -54,7 +55,7 @@
           const i = document.createElement('img');
           i._src = img.preview;
           i.alt = img.alt;
-          
+
           // add onclick callback on each image to trigger the overlay
           i.addEventListener('click', event => {
             const largeImage = document.createElement('img');
@@ -66,7 +67,7 @@
 
             overlay.classList.toggle('hidden');
           });
-          
+
           // load image previews lazily
           new IntersectionObserver(
             entries => {
@@ -91,4 +92,3 @@
     }
   );
 })();
-

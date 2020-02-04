@@ -1,4 +1,5 @@
 (() => {
+  if (!customElements) return;
   customElements.define('my-contact-form',
     /**
      * A contact form that POSTs to an API in order to send me an email.
@@ -45,7 +46,7 @@
         this.shadowRoot.querySelector('input').placeholder    = this.getAttribute('subject')   || 'Subject';
         this.shadowRoot.querySelector('textarea').placeholder = this.getAttribute('message')   || 'Message';
         this.shadowRoot.querySelector('button').innerText     = this.getAttribute('submit')    || 'Send';
-        
+
         // handle form submission via AJAX
         const form = this.shadowRoot.querySelector('form');
         form.subjectLabel   = this.getAttribute('subject')   || 'Subject';
@@ -73,7 +74,7 @@
 
         form.submitBtn.disabled = true;
         form.submitBtn.innerText = '...';
-        
+
         fetch(form.action, {
           method: form.method,
           headers: {
