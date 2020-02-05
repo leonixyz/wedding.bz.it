@@ -172,7 +172,18 @@ footer.page-footer .icon svg path {
 .hero {
   height: 40rem;
   background-size: cover;
-  background-attachment: fixed;
+}
+
+@-moz-document url-prefix() {
+  .hero {
+     background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+     background-attachment: fixed;
+  }
 }
 
 section {
