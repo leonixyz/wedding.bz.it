@@ -172,8 +172,8 @@
         mein Portfolio sehen wollen!
         <hr>
       </noscript>
-      <my-image-gallery
-        images='[
+      <section id="my-image-gallery"
+        data-images='[
           {"preview":"/img/gallery/previews/0015.jpg", "url":"/img/gallery/0015.jpg", "alt":""},
           {"preview":"/img/gallery/previews/0004.jpg", "url":"/img/gallery/0004.jpg", "alt":""},
           {"preview":"/img/gallery/previews/0006.jpg", "url":"/img/gallery/0006.jpg", "alt":""},
@@ -196,8 +196,13 @@
           {"preview":"/img/gallery/previews/0019.jpg", "url":"/img/gallery/0019.jpg", "alt":""},
           {"preview":"/img/gallery/previews/0012.jpg", "url":"/img/gallery/0012.jpg", "alt":""}
         ]'>
-      </my-image-gallery>
-
+        <div id="overlay" class="hidden">
+          <span id="close-overlay-icon">&times;</span>
+          <div id="overlay-content">
+          </div>
+        </div>
+      </section>
+      
       <hr>
 
       <p class="IE-only">
