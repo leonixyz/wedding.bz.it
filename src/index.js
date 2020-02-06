@@ -1,7 +1,7 @@
 // Load polyfill for IntersectionObserver
 if(!IntersectionObserver) {
   var request = new XMLHttpRequest();
-  request.open('GET', 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver', false);
+  request.open('GET', '/intersection-observer.js', false);
   request.send(null);
 
   if (request.status === 200) {
