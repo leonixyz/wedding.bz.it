@@ -1,5 +1,5 @@
 // Load polyfill for IntersectionObserver
-if(!IntersectionObserver) {
+if(!("IntersectionObserver" in window)) {
   var request = new XMLHttpRequest();
   request.open('GET', '/intersection-observer.js', false);
   request.send(null);
