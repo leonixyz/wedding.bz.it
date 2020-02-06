@@ -1,5 +1,5 @@
-// Load polyfill for IntersectionObserver on Internet Explorer and old MS Edge
-if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+// Load polyfill for IntersectionObserver
+if(!IntersectionObserver) {
   var request = new XMLHttpRequest();
   request.open('GET', 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver', false);
   request.send(null);
