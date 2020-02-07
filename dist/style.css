@@ -370,7 +370,7 @@ hr {
 #my-image-gallery .masonry img {
  margin: 0.25rem 0;
  width:100%;
- min-height: 200px;
+ min-height: 100px;
  transition: all .6s cubic-bezier(.17,.67,.3,.95);
  cursor: pointer;
 }
